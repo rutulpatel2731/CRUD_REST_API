@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "523b223d-fd6b-4682-8f5d-999c239aa6a4",
+		"name": "CRUD REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27731647"
+	},
+	"item": [
+		{
+			"name": "Fetch All Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Important%20Task/PHP%20REST%20API/api-fetch-all.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Important%20Task",
+						"PHP%20REST%20API",
+						"api-fetch-all.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Single Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Transfer-Encoding",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sid\" : \"9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost\\Important Task\\PHP REST API\\api-fetch-single.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Important Task",
+						"PHP REST API",
+						"api-fetch-single.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sname\" : \"Harshit Patel\",\r\n    \"sage\" : 20,\r\n    \"scity\" : \"Ahmedabad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost\\Important Task\\PHP REST API\\api-insert.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Important Task",
+						"PHP REST API",
+						"api-insert.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sid\" : \"6\",\r\n    \"sname\" : \"Dheni\",\r\n    \"sage\" : 34,\r\n    \"scity\" : \"aaa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost\\Important Task\\PHP REST API\\api-update.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Important Task",
+						"PHP REST API",
+						"api-update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Data",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"sid\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost\\Important Task\\PHP REST API\\api-delete.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Important Task",
+						"PHP REST API",
+						"api-delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Specific Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/Important Task/PHP REST API/api-search.php?search=Ravi",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Important Task",
+						"PHP REST API",
+						"api-search.php"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Ravi"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
