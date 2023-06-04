@@ -8,7 +8,7 @@ header('Access-Control-Allow-Headers:Content-Type,Allow-Access-Control-Method,X-
 
 $jsonData = json_decode(file_get_contents("php://input"),true);
 // print_r($jsonData['sid']);
-$studentId = $jsonData['sid'];
+$studentId = $jsonData['id'];
 
 $sql = "Delete from student where id = '$studentId'";
 $result = mysqli_query($conn,$sql);

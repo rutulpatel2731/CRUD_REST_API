@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2023 at 06:01 PM
+-- Generation Time: Jun 04, 2023 at 01:53 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.3.27
 
@@ -39,10 +39,7 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`id`, `student_name`, `age`, `city`) VALUES
-(2, 'Rutul Sheladiya', 23, 'Surat'),
-(3, 'Ravi Mandani', 22, 'Ahmedabad'),
-(4, 'Purvish Dhameliya', 39, 'Vadodara'),
-(5, 'Sumit Rajput', 30, 'Anand');
+(1, 'Ravi Patel', 22, 'Suratt');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +59,7 @@ ALTER TABLE `student`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="container my-4">
+        <h3 class="text-center my-4">CRUD Operation</h3>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6">
+                <form action="" id="addForm">
+                    <div class="form-group">
+                        <label for="" class="my-2">Enter Name</label>
+                        <input type="text" name="sname" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="my-2">Enter Age</label>
+                        <input type="text" name="sage" class="form-control" placeholder="Enter Age">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="my-2">Enter City</label>
+                        <input type="text" name="scity" class="form-control" placeholder="Enter City">
+                    </div>
+                    <div class="form-group text-center my-3">
+                        <button class="btn btn-primary" type="submit" id="sendData">Submit</button>
+                    </div>
+                </form>
+                <div class="alert alert-success d-none" id="successMsg" role="alert"></div>
+                <div class="alert alert-danger d-none" id="errorMsg" role="alert"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- table -->
+    <section class="container">
+        <table class="table table-responsive" border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="loadData"></tbody>
+        </table>
+    </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Update Data</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="updateForm">
+                        <div class="form-group">
+                            <label for="" class="my-2">Enter Name</label>
+                            <input type="hidden" name="sid" id="edit-id">
+                            <input type="text" name="sname" class="form-control" placeholder="Enter Name" id="edit-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="my-2">Enter Age</label>
+                            <input type="text" name="sage" class="form-control" placeholder="Enter Age" id="edit-age">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="my-2">Enter City</label>
+                            <input type="text" name="scity" class="form-control" placeholder="Enter City" id="edit-city">
+                        </div>
+                        <div class="form-group text-center my-3">
+                            <button class="btn btn-primary" type="submit" id="updateBtn">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

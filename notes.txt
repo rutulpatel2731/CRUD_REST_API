@@ -1,0 +1,10 @@
+* Insert Logic * 
+=> jyare apde postman ma API throgh data insert karaviye tyare json na form ma data apiye and te data php side 
+json_decode thi php array na form ma convert kari ne insert karaviye chiye.
+
+=> jyare apde form throgh data insert karaviye tyare form na data ne direct apde JSON ma convert na kari shakiye to tena mate 
+3 step chiye
+1) data ne serializearray ma convert karvo
+2) pchi te data ne js na object ma convert karvo
+3) pchi js object ne JSON ma convert krvo using JSON.parse
+  
