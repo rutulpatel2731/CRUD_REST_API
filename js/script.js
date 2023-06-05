@@ -2,7 +2,7 @@ $(document).ready(function() {
     function loadTable() {
         $("#loadData").html("");
         $.ajax({
-            url: "http://localhost/Important%20Task/PHP%20REST%20API/api-fetch-all.php",
+            url: "http://php/Practial%20Task/CRUD_REST_API/api-fetch-all.php",
             type: "GET",
             success: function(data) {
                 // console.log(data);
@@ -65,7 +65,7 @@ $(document).ready(function() {
         var obj = { sid: studentId };
         var myJson = JSON.stringify(obj);
         $.ajax({
-            url: "http://localhost/Important%20Task/PHP%20REST%20API/api-fetch-single.php",
+            url: "http://php/Practial%20Task/CRUD_REST_API/api-fetch-single.php",
             type: "POST",
             data: myJson,
             success: function(data) {
@@ -87,7 +87,7 @@ $(document).ready(function() {
             message("All fields are required", false);
         } else {
             $.ajax({
-                url: "http://localhost/Important%20Task/PHP%20REST%20API/api-insert.php",
+                url: "http://php/Practial%20Task/CRUD_REST_API/api-insert.php",
                 type: "POST",
                 data: jsonObj,
                 success: function(data) {
@@ -110,7 +110,7 @@ $(document).ready(function() {
             message("All fields are required", false);
         } else {
             $.ajax({
-                url: "http://localhost/Important%20Task/PHP%20REST%20API/api-update.php",
+                url: "http://php/Practial%20Task/CRUD_REST_API/api-update.php",
                 type: "POST",
                 data: jsonObj,
                 success: function(data) {
@@ -132,7 +132,7 @@ $(document).ready(function() {
         var jsonObj = JSON.stringify(myObj);
         console.log(jsonObj);
         $.ajax({
-            url: "http://localhost/Important%20Task/PHP%20REST%20API/api-delete.php",
+            url: "http://php/Practial%20Task/CRUD_REST_API/api-delete.php",
             type: "POST",
             data: jsonObj,
             success: function(data) {
